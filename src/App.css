@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.App input{
+    width: 100%;
+    border: 1px solid rgb(182, 171, 171);
+}
+.calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 20vh;
+    width: 20%;
+   gap: 20px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 20vh;
+    width: 100%;
+   gap: 20px;
+}
+.mainButtons{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 20vh;
+    width: 100%;
+   gap: 20px;
+}
+.buttons button{
+    height:30px;
+    width: 30px;
+    background-color: rgb(174, 132, 230);
+    color: white;
+    border-width: 0px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+.buttons .neverClick{
+    background-color: rgb(255, 0, 0);
+    height: 65px;
+    width: 150px;
+    font-weight: bolder;
+    transition: .2s;
+}
+.buttons .reset{
+    background-color: rgb(219, 68, 68);
+  
+}
+h1{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button:hover{
+    background-color:  rgb(156, 104, 223);
+}
+.reset:hover{
+    background-color:  rgb(199, 51, 51);
+}
+
+  
+  .neverClick:hover span {
+    display: none
+
+  }
+  
+  .neverClick:hover:before {
+    content: "I SAID NEVER!!!"
+    
+  }
+  .neverClick:hover{
+    background-color: rgb(212, 5, 5);
+  }
